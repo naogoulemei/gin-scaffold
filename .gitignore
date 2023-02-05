@@ -1,0 +1,4 @@
+*.log
+.vscode
+gin_scaffold
+func
