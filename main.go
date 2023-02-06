@@ -7,7 +7,7 @@ import (
 
 	"func/router"
 
-	"github.com/e421083458/golang_common/lib"
+	"func/lib"
 )
 
 func main() {

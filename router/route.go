@@ -62,7 +62,7 @@ func InitRouter(middlewares ...gin.HandlerFunc) *gin.Engine {
 	// programatically set swagger info
 	docs.SwaggerInfo.Title = lib.GetStringConf("base.swagger.title")
 	docs.SwaggerInfo.Description = lib.GetStringConf("base.swagger.desc")
-	docs.SwaggerInfo.Version = "1.0"
+	docs.SwaggerInfo.Version = "2.0"
 	docs.SwaggerInfo.Host = lib.GetStringConf("base.swagger.host")
 	docs.SwaggerInfo.BasePath = lib.GetStringConf("base.swagger.base_path")
 	docs.SwaggerInfo.Schemes = []string{"http", "https"}
@@ -74,6 +74,7 @@ func InitRouter(middlewares ...gin.HandlerFunc) *gin.Engine {
 			"message": "pong",
 		})
 	})
+
 	router.GET("/swagger/*any", ginSwagger.WrapHandler(swaggerFiles.Handler))
 
 	//demo

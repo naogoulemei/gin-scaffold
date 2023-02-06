@@ -17,7 +17,7 @@ import (
 	"strings"
 	"time"
 
-	dlog "github.com/e421083458/golang_common/log"
+	dlog "func/lib/log"
 )
 
 var TimeLocation *time.Location
