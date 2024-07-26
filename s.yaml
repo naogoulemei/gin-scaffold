@@ -11,7 +11,7 @@ services:
       function:
         name: gin-scaffold-p12e
         description: Initialize
-        runtime: custom
+        runtime: go1
         environmentVariables:
           LD_LIBRARY_PATH: >-
             /code:/code/lib:/usr/local/lib:/opt/lib:/opt/php8.1/lib:/opt/php8.0/lib:/opt/php7.2/lib
